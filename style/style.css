@@ -127,15 +127,35 @@ body {
     font-size: 1.2em;
     margin-left: 18px;
 }
-.button_icon-square {
+.button_icon-square,
+.button_icon-circle {
+    text-align: center;
     padding: 0;
     --size: 50px;
-    width: var(--size);
+    min-width: var(--size);
     height: var(--size);
     line-height: var(--size);
     border-radius: 15px;
     text-align: center;
     font-size: 20px;
+}
+.button_icon-circle {
+    --size: 62px;
+    border-radius: var(--size);
+}
+.button_xl {
+    padding: 22px 40px;
+}
+
+.products {
+    padding: 120px 0;
+}
+
+.title {
+    font-size: 70px;
+    line-height: 82px;
+    font-weight: 600;
+    color: var(--dark_blue);
 }
 
 .first-screen__title {
@@ -154,20 +174,6 @@ body {
     max-width: 460px;
     margin-bottom: 40px;
     margin-top: 30px;
-}
-
-.button_xl {
-    padding: 22px 40px;
-}
-
-.products {
-    padding: 120px 0;
-}
-
-.title {
-    font-size: 70px;
-    line-height: 82px;
-    font-weight: 600;
 }
 
 .products__cards {
@@ -225,4 +231,74 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: var(--dark_blue);
+}
+
+.how-work {
+    position: relative;
+    padding: 56px 0;
+    color: var(--dark_blue);
+}
+.how-work .content {
+    display: flex;
+    align-items: center;
+}
+.how-work__img {
+    margin-right: 140px;
+}
+.how-work__description {
+    margin: 40px 0;
+    opacity: 75%;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+.how-work__list {
+    padding: 0;
+    
+}
+.how-work__list li {
+    display: flex;
+    align-items: center;
+}
+.how-work__list li:not(:last-child) {
+    margin-bottom: 40px;
+}
+.how-work__list .button {
+    margin-right: 30px;
+}
+.how-work__list li:nth-child(1) .button {
+    background-color: #7E4FF2;
+}
+.how-work__list li:nth-child(2) .button {
+    background-color: #7BBB66;
+}
+.how-work__list li:nth-child(3) .button {
+    background-color: #FF800B;
+}
+.how-work__list li:nth-child(4) .button {
+    background-color: #FFD400;
+}
+.how-work__list strong {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+.how-work__list span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    opacity: 67%;
+} 
+
+.bg-circle {
+    position: absolute;
+    top: 50%;
+    left: -38%;
+    margin-top: calc(var(--size) / -2);
+    --size: 680px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    border: 74px solid var(--primary);
+    opacity: 23%;
 }
