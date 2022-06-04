@@ -242,6 +242,9 @@ body {
     display: flex;
     align-items: center;
 }
+.how-work .bg-circle {
+    left: -38%;
+}
 .how-work__img {
     margin-right: 140px;
 }
@@ -253,7 +256,6 @@ body {
 }
 .how-work__list {
     padding: 0;
-    
 }
 .how-work__list li {
     display: flex;
@@ -290,10 +292,35 @@ body {
     opacity: 67%;
 } 
 
+.about-us {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+.about-us .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.bg-circle {
+    right: 18px;
+}
+
+.about-us__img {
+    margin-left: 126px;
+}
+
+.about-us__description {
+    margin: 26px 0 50px;
+    opacity: 75%;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
 .bg-circle {
     position: absolute;
     top: 50%;
-    left: -38%;
     margin-top: calc(var(--size) / -2);
     --size: 680px;
     width: var(--size);
